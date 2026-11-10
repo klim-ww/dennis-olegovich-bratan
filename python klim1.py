@@ -42,7 +42,7 @@ print(os.path.getsize(filename))
 from datetime import datetime
 
 LOG_FILE = "app.log"
-
+#
 
 def log_event(message):
     """Дописывает сообщение с текущей меткой времени в конец файла."""

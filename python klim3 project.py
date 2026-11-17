@@ -112,6 +112,7 @@ show_list("Все задачи", manager.all_tasks())
 # отмечаем выполненной
 print("\nОтметили 'Выучить Python':", manager.complete_task("Выучить Python"))
 print("Отметили 'Несуществующая':", manager.complete_task("Несуществующая"))
+print("Отметили 'Оплатить интернет':", manager.complete_task("Оплатить интернет"))
 
 show_list("Фильтр по тегу 'универ'", manager.filter_by_tag("универ"))
 show_list("Просроченные на 2026-11-17", manager.overdue_tasks("2026-11-17"))

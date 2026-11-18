@@ -14,7 +14,7 @@ class Project:
 
     @property
     def tasks(self):
-        return list(self._tasks)  # копия, чтобы список нельзя было испортить снаружи
+        return list(self._tasks)
 
     def find_task(self, title):
         for task in self._tasks:

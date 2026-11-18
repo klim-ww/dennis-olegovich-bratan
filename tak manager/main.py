@@ -17,7 +17,7 @@ HELP_TEXT = """Команды:
   exit     - выход"""
 
 
-# ---------- ввод с повтором при ошибке ----------
+#ввод с повтором при ошибке
 def ask(prompt, convert=str):
     while True:
         raw = input(prompt).strip()
@@ -64,10 +64,9 @@ def show_list(title, tasks):
     if not tasks:
         print("(пусто)")
     for task in tasks:
-        print(task)  # полиморфизм: у каждого вида задачи свой describe()
+        print(task)
 
-
-# ---------- команды ----------
+#команды
 def cmd_help(manager):
     print(HELP_TEXT)
 

@@ -22,7 +22,7 @@ class Task:
         self._tag = tag
         self._done = False
 
-    # ---------- проверки (используются и в main для повторного ввода) ----------
+    #проверки (используются и в main для повторного ввода)
     @staticmethod
     def check_title(title):
         title = title.strip()
@@ -38,7 +38,7 @@ class Task:
             )
         return value
 
-    # ---------- свойства ----------
+    #свойства
     @property
     def title(self):
         return self._title
@@ -59,7 +59,7 @@ class Task:
     def done(self):
         return self._done
 
-    # ---------- поведение ----------
+    #поведение
     def mark_done(self):
         if self._done:
             raise ValueError(f"Задача «{self._title}» уже выполнена.")
